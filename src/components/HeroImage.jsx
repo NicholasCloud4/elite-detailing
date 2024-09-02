@@ -7,7 +7,8 @@ export function HeroImage() {
     const images = [
         "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.pexels.com/photos/2127022/pexels-photo-2127022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "https://images.pexels.com/photos/6872156/pexels-photo-6872156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "https://images.pexels.com/photos/6872156/pexels-photo-6872156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "/meguiars.jpg",
     ];
     return (
         <ImagesSlider className="h-[40rem]" images={images}>
