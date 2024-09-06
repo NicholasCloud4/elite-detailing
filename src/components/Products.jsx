@@ -6,18 +6,17 @@ import { PiSprayBottleFill } from "react-icons/pi";
 import { IoCarSport } from "react-icons/io5";
 import { PiTowelFill } from "react-icons/pi";
 import { MdOutlineWaves } from "react-icons/md";
-import Image from 'next/image';
+import styles from './Products.module.css';
 
 const Products = () => {
     return (
         <>
-            <p className='pt-20 text-4xl'>Products Included</p>
+            <p className={styles.productsHeader}>Products Included</p>
             <div style={{ display: 'flex', marginLeft: '20px', marginRight: '20px' }}>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
 
                     <div class="col">
-                        <div class="card">
-                            {/* <Image src="/microfiber-car-cleaning-towel-500x500.webp" alt="Image description" width={500} height={300} /> */}
+                        <div class="card h-100">
                             <div class="card-body">
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <IoCarSport size={30} />
@@ -29,8 +28,7 @@ const Products = () => {
                     </div>
 
                     <div class="col">
-                        <div class="card">
-                            {/* <Image src="/microfiber-car-cleaning-towel-500x500.webp" alt="Image description" width={500} height={300} /> */}
+                        <div class="card h-100">
                             <div class="card-body">
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <PiSeatFill size={30} />
@@ -42,8 +40,7 @@ const Products = () => {
                     </div>
 
                     <div class="col">
-                        <div class="card">
-                            {/* <Image src="/microfiber-car-cleaning-towel-500x500.webp" alt="Image description" width={500} height={300} /> */}
+                        <div class="card h-100">
                             <div class="card-body">
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <PiSprayBottleFill size={30} />
@@ -55,8 +52,7 @@ const Products = () => {
                     </div>
 
                     <div class="col">
-                        <div class="card">
-                            {/* <Image src="/microfiber-car-cleaning-towel-500x500.webp" alt="Image description" width={500} height={300} /> */}
+                        <div class="card h-100">
                             <div class="card-body">
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <TbWheel size={30} />
@@ -69,8 +65,7 @@ const Products = () => {
                     </div>
 
                     <div class="col">
-                        <div class="card">
-                            {/* <Image src="/microfiber-car-cleaning-towel-500x500.webp" alt="Image description" width={500} height={300} /> */}
+                        <div class="card h-100">
                             <div class="card-body">
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <MdOutlineWaves size={30} />
@@ -82,8 +77,7 @@ const Products = () => {
                     </div>
 
                     <div class="col">
-                        <div class="card">
-                            {/* <Image src="/microfiber-car-cleaning-towel-500x500.webp" alt="Image description" width={200} height={500} /> */}
+                        <div class="card h-100">
                             <div class="card-body">
                                 <div style={{ display: 'flex', alignItems: 'center' }}>
                                     <PiTowelFill size={30} />
