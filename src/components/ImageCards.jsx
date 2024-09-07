@@ -5,7 +5,7 @@ import styles from './Title.module.css'
 const ImageCards = () => {
     return (
         <>
-            <p className={styles.sectionHeader}>SHOWCASE</p>
+            <p id="showcase" className={styles.sectionHeader}>SHOWCASE</p>
             <div style={{ display: 'flex', marginLeft: '20px', marginRight: '20px' }}>
                 <div className="row row-cols-1 row-cols-md-2 g-4">
 

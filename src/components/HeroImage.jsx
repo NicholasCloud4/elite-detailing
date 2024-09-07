@@ -32,7 +32,7 @@ export function HeroImage() {
                 <motion.p className="font-bold text-md md:text-md text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
                     Discover high-performance detailing products tailored for car enthusiasts.
                 </motion.p>
-                <button className="px-4 py-2 backdrop-blur-sm border bg-red-300/20 border-red-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+                <button onClick={() => { document.getElementById('products').scrollIntoView({ behavior: 'smooth' }) }} className="px-4 py-2 backdrop-blur-sm border bg-red-300/20 border-red-500/20 text-white mx-auto text-center rounded-full relative mt-4">
                     <span>View Products →</span>
                     <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-red-500 to-transparent" />
                 </button>

@@ -10,7 +10,7 @@ import styles from "./Title.module.css";
 export function ProductsHover() {
     return (
         <>
-            <p className={styles.sectionHeader}>Products Included</p>
+            <p id="products" className={styles.sectionHeader}>Products Included</p>
             <div className="w-500 mx-0 px-4">
                 <HoverEffect items={projects} />
             </div>
