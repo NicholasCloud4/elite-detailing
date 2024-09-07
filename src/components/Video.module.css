@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    height: 100vh;
+}
+
+
+.video {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 50px;
+    }
+}

@@ -1,10 +1,10 @@
-.productsHeader {
+.sectionHeader {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
     margin: 0;
-    padding: 0;
+    padding-bottom: 0;
     text-align: center;
     font-size: x-large;
 }

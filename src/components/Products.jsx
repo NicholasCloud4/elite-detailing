@@ -6,12 +6,12 @@ import { PiSprayBottleFill } from "react-icons/pi";
 import { IoCarSport } from "react-icons/io5";
 import { PiTowelFill } from "react-icons/pi";
 import { MdOutlineWaves } from "react-icons/md";
-import styles from './Products.module.css';
+import styles from './Title.module.css';
 
 const Products = () => {
     return (
         <>
-            <p className={styles.productsHeader}>Products Included</p>
+            <p className={styles.sectionHeader}>Products Included</p>
             <div style={{ display: 'flex', marginLeft: '20px', marginRight: '20px' }}>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
 
