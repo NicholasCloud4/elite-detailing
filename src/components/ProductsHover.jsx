@@ -27,7 +27,7 @@ export const projects = [
         ),
         description:
             "Ultimate Wash and Wax is the perfect way to not only clean, but also boost your protection, glossiness and add shine to your car's finish in-between regular waxing.",
-        link: "https://netflix.com",
+        link: "https://www.meguiarsdirect.com/meguiars-ultimate-wash-wax-48oz.html",
     },
     {
         title: (
@@ -38,7 +38,7 @@ export const projects = [
         ),
         description:
             "The fastest way to clean all interior surfaces. Use every time you wash or Quik Detail to give your interior that just detailed look. In just 5 additional minutes, your entire interior will look sharp and smell fresh.",
-        link: "https://netflix.com",
+        link: "https://www.meguiarsdirect.com/meguiars-ultimate-quik-detailer-24-oz.html",
     },
     {
         title: (
@@ -49,7 +49,7 @@ export const projects = [
         ),
         description:
             "This unique formula spreads and wipes off quickly, with superior cleaning ability to tackle even the dirtiest glass. Easily removes vinyl fog residue, road grime, smokers film, bird droppings and bug splatter. Use what the pros use for streak-free clarity!",
-        link: "https://netflix.com",
+        link: "https://www.meguiarsdirect.com/meguiars-ultimate-glass-cleaner-water-repellant-16-oz.html",
     },
     {
         title: (
@@ -60,7 +60,7 @@ export const projects = [
         ),
         description:
             "This advanced chemistry blends road grime attacking surfactants with active brake dust dissolving agents. The deep-cleaning gel formula turns brake dust purple and road grime brown as it gently loosens stubborn contaminants. And since it’s acid free and pH balanced this wheel cleaner is safe and effective for all wheel finishes and painted brake components.",
-        link: "https://netflix.com",
+        link: "https://www.meguiarsdirect.com/meguiars-ultimate-all-wheel-cleaner.html",
     },
     {
         title: (
@@ -71,7 +71,7 @@ export const projects = [
         ),
         description:
             "This cutting-edge formula allows you to get the benefits of ultra-durable protection that increases gloss and slickness with unbelievable water beading, but it doesn't require a complicated process to apply or remove. One of the benefits of this coating is that it will conceal light paint defects.",
-        link: "https://netflix.com",
+        link: "https://www.meguiarsdirect.com/meguiars-ultimate-ceramic-coating-8-oz.html",
     },
     {
         title: (
@@ -82,6 +82,6 @@ export const projects = [
         ),
         description:
             "Reduces drying time with less wring-outs by absorbing up to two times the water of traditional terry towels.",
-        link: "https://netflix.com",
+        link: "https://www.meguiarsdirect.com/meguiars-supreme-shine-drying-towel.html",
     },
 ];
