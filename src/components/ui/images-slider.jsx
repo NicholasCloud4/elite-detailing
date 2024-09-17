@@ -88,16 +88,16 @@ export const ImagesSlider = ({
         ease: [0.645, 0.045, 0.355, 1.0],
       },
     },
-    upExit: {
+    leftExit: {
       opacity: 1,
-      y: "-150%",
+      x: "-150%",
       transition: {
         duration: 1,
       },
     },
-    downExit: {
+    rightExit: {
       opacity: 1,
-      y: "150%",
+      x: "150%",
       transition: {
         duration: 1,
       },
@@ -126,7 +126,7 @@ export const ImagesSlider = ({
             src={loadedImages[currentIndex]}
             initial="initial"
             animate="visible"
-            exit={direction === "up" ? "upExit" : "downExit"}
+            exit={direction === "left" ? "leftExit" : "rightExit"}
             variants={slideVariants}
             className="image h-full w-full absolute inset-0 object-cover object-center" />
         </AnimatePresence>

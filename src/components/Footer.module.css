@@ -1,0 +1,44 @@
+.hr {
+    width: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    background-color: rgb(107 114 128);
+    padding: 80px 13% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 3.5rem;
+    color: white;
+}
+
+.footerContent h4 {
+    margin-bottom: 20px;
+}
+
+.icons a {
+    color: white;
+    display: inline-block;
+}
+
+.footerContent ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.footerContent li {
+    margin-bottom: 10px;
+}
+
+.footerContent a {
+    color: white;
+    text-decoration: none;
+    width: 50px;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    margin-top: -50px;
+}

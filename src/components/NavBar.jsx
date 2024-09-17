@@ -25,9 +25,9 @@ const NavBar = () => {
                     <li><a href="">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#showcase">Showcase</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <button>
-                        Sign Up
+                        <a href="#signup">Sign Up</a>
                     </button>
                 </ul>
 
@@ -43,12 +43,12 @@ const NavBar = () => {
             {/* Mobile Menu */}
             {menuOpen && (
                 <ul className={styles.mobileMenu}>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#showcase">Showcase</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <button>
-                        Sign Up
+                        <a href="#signup">Sign Up</a>
                     </button>
                 </ul>
             )}
