@@ -5,54 +5,51 @@ import styles from './Title.module.css'
 const ImageCards = () => {
     return (
         <>
-            <p id="showcase" className={styles.sectionHeader}>SHOWCASE</p>
+            <p id="showcase" className={styles.sectionHeader}>Showcase</p>
             <div style={{ display: 'flex', marginLeft: '20px', marginRight: '20px' }}>
                 <div className="row row-cols-1 row-cols-md-2 g-4">
 
                     <div className="col">
-                        <div className="card" style={{ height: '300px', overflow: 'hidden' }}>
+                        <div className="card" style={{ height: '400px', overflow: 'hidden' }}>
                             <Image
-                                src="/soap.jpg"
+                                src="/wash.webp"
                                 alt="Image description"
-                                width={1500}
-                                height={500}
-                                objectFit="contain"
+                                layout='fill'
+                                objectFit="cover"
                             />
                         </div>
                     </div>
 
                     <div className="col">
-                        <div className="card" style={{ height: '300px', overflow: 'hidden' }}>
+                        <div className="card" style={{ height: '400px', overflow: 'hidden' }}>
                             <Image
-                                src="/microfiber-car-cleaning-towel-500x500.webp"
+                                src="/towel.webp"
                                 alt="Image description"
-                                width={1500}
-                                height={500}
-                                objectFit="contain"
+                                layout='fill'
+                                objectFit="cover"
                             />
                         </div>
                     </div>
 
                     <div className="col">
-                        <div className="card" style={{ height: '300px', overflow: 'hidden' }}>
+                        <div className="card" style={{ height: '400px', overflow: 'hidden' }}>
                             <Image
-                                src="/cleaningtires.jpg"
+                                src="/wheels.png"
                                 alt="Image description"
+                                objectFit="cover"
                                 width={1500}
                                 height={500}
-                                objectFit="contain"
                             />
                         </div>
                     </div>
 
                     <div className="col">
-                        <div className="card" style={{ height: '300px', overflow: 'hidden' }}>
+                        <div className="card" style={{ height: '400px', overflow: 'hidden' }}>
                             <Image
-                                src="/creamiccoating.jpg"
+                                src="/interior.jpg"
                                 alt="Image description"
-                                width={1500}
-                                height={500}
-                                objectFit="contain"
+                                layout='fill'
+                                objectFit="cover"
                             />
                         </div>
                     </div>

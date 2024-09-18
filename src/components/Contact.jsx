@@ -6,6 +6,7 @@ const Contact = () => {
         <>
             <hr />
             <div id='contact' className={styles.container}>
+
                 <div className={styles.leftText}>
                     <p className={styles.title}>Elite Detailing</p>
                     <p>12309 Doherty St, Riverside, CA 92503</p>

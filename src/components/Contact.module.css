@@ -4,6 +4,7 @@
     justify-content: space-between;
     gap: 8px;
     padding: 20px;
+    margin: 0 40px;
 }
 
 .title {
@@ -13,7 +14,7 @@
 }
 
 .rightText {
-    margin-top: 70px;
+    margin-top: 77px;
     flex: 1;
     text-align: justify;
     line-height: 30px;
@@ -22,4 +23,18 @@
 .leftText {
     flex: 1;
     line-height: 50px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftText {
+        order: 1;
+    }
+
+    .rightText {
+        order: 2;
+    }
 }
