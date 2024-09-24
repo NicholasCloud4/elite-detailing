@@ -16,8 +16,8 @@ const NavBar = () => {
             <div className={styles.navbar}>
                 <Image
                     src={"/ELITE NEW.png"}
-                    width={500}
-                    height={500}
+                    width={900}
+                    height={900}
                     alt="logo"
                     className={styles.logo}
                 />

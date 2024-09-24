@@ -37,6 +37,12 @@
 
 .button {
     background-color: #f56565;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
+    transition: background-color 700ms;
+}
+
+.button:hover {
+    background-color: rgb(255, 47, 47);
+    transition: 700ms;
 }
