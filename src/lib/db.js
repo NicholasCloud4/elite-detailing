@@ -11,7 +11,7 @@ const pool = new Pool({
 
 // Function to run queries on PostgreSQL
 export const query = async (text, params) => {
-    const client = await pool.connect(); // Get a connection from the pool
+    const client = await pool.connect();
     try {
         const res = await client.query(text, params);
         return res;
