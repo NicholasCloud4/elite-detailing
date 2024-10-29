@@ -12,6 +12,21 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        if (!name) {
+            setMessage('Please enter a name');
+            return;
+        }
+
+        if (!email) {
+            setMessage('Please enter an email');
+            return;
+        }
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
+        if (!emailRegex.test(email)) {
+            setMessage('Please enter a valid email');
+            return;
+        }
+
         try {
             const res = await fetch('./api/users', {
                 method: 'POST',
@@ -26,8 +41,6 @@ const SignUp = () => {
                 setMessage(`Thank you ${data.name} for signing up to our mailing list!`);
                 setName('');
                 setEmail('');
-            } else {
-                setMessage('Please enter a valid email');
             }
         } catch (error) {
             setMessage('Error adding user');
