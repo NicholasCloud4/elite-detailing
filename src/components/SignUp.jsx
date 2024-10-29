@@ -12,6 +12,12 @@ const SignUp = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+
+        if (!name && !email) {
+            setMessage("Please enter a name and email");
+            return;
+        }
+
         if (!name) {
             setMessage('Please enter a name');
             return;
@@ -21,6 +27,7 @@ const SignUp = () => {
             setMessage('Please enter an email');
             return;
         }
+
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
         if (!emailRegex.test(email)) {
             setMessage('Please enter a valid email');
