@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import styles from './SignUp.module.css';
 
-
 const SignUp = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -11,7 +10,6 @@ const SignUp = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
 
         if (!name && !email) {
             setMessage("Please enter a name and email");
@@ -35,7 +33,8 @@ const SignUp = () => {
         }
 
         try {
-            const res = await fetch('./api/users', {
+            // First request: Save user in the database
+            const userRes = await fetch('./api/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -43,14 +42,31 @@ const SignUp = () => {
                 body: JSON.stringify({ name, email }),
             });
 
-            const data = await res.json();
-            if (res.ok) {
-                setMessage(`Thank you ${data.name} for signing up to our mailing list!`);
+            if (!userRes.ok) {
+                throw new Error('Error adding user');
+            }
+
+            const userData = await userRes.json();
+
+            // Second request: Send a welcome email
+            const emailRes = await fetch('./api/email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, email }),
+            });
+
+            if (emailRes.ok) {
+                setMessage(`Thank you ${userData.name} for signing up! A welcome email has been sent.`);
                 setName('');
                 setEmail('');
+            } else {
+                throw new Error('Error sending email');
             }
         } catch (error) {
-            setMessage('Error adding user');
+            console.error(error);
+            setMessage('An error occurred. Please try again.');
         }
     };
 
@@ -80,6 +96,6 @@ const SignUp = () => {
             {message && <p>{message}</p>}
         </div>
     );
-}
+};
 
 export default SignUp;
