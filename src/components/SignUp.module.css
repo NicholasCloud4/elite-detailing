@@ -35,6 +35,11 @@
     color: black;
 }
 
+.errorInput {
+    border: 1px solid #b00020;
+    background-color: #fdd;
+}
+
 .button {
     background-color: #f56565;
     padding: 10px 20px;
@@ -45,4 +50,19 @@
 .button:hover {
     background-color: rgb(255, 47, 47);
     transition: 700ms;
+}
+
+.message {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.error {
+    color: #ff8181;
+}
+
+.success {
+    color: #4CAF50;
 }

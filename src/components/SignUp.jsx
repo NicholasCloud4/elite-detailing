@@ -7,28 +7,36 @@ const SignUp = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [errors, setErrors] = useState({ name: false, email: false });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        setErrors({ name: false, email: false });
+        setMessage('');
+
         if (!name && !email) {
             setMessage("Please enter a name and email");
+            setErrors({ name: true, email: true });
             return;
         }
 
         if (!name) {
             setMessage('Please enter a name');
+            setErrors({ name: true });
             return;
         }
 
         if (!email) {
             setMessage('Please enter an email');
+            setErrors({ email: true });
             return;
         }
 
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/;
         if (!emailRegex.test(email)) {
             setMessage('Please enter a valid email');
+            setErrors({ email: true });
             return;
         }
 
@@ -78,14 +86,14 @@ const SignUp = () => {
             </div>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <input
-                    className={styles.input}
+                    className={`${styles.input} ${errors.name ? styles.errorInput : ''}`}
                     type="text"
                     placeholder='Name'
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
                 <input
-                    className={styles.input}
+                    className={`${styles.input} ${errors.email ? styles.errorInput : ''}`}
                     type="email"
                     placeholder='Email'
                     value={email}
@@ -93,7 +101,7 @@ const SignUp = () => {
                 />
                 <button className={styles.button}>Sign Up</button>
             </form>
-            {message && <p>{message}</p>}
+            {message && <p className={`${styles.message} ${errors.name || errors.email ? styles.error : styles.success}`}>{message}</p>}
         </div>
     );
 };
