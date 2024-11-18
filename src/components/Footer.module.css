@@ -32,9 +32,25 @@
 }
 
 .footerContent a {
+    position: relative;
     color: white;
     text-decoration: none;
     width: 50px;
+}
+
+.footerContent a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(224, 224, 224);
+    transition: width 700ms;
+}
+
+.footerContent a:hover::after {
+    width: 100%;
 }
 
 .img {
