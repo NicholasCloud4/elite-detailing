@@ -32,13 +32,16 @@
 }
 
 .footerContent a {
-    position: relative;
     color: white;
     text-decoration: none;
     width: 50px;
 }
 
-.footerContent a::after {
+.footerContent .underline {
+    position: relative;
+}
+
+.footerContent .underline::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -49,7 +52,7 @@
     transition: width 700ms;
 }
 
-.footerContent a:hover::after {
+.footerContent .underline:hover::after {
     width: 100%;
 }
 

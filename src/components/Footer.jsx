@@ -24,23 +24,23 @@ const Footer = () => {
                 <div className={styles.footerContent}>
                     <h4>Products</h4>
                     <ul>
-                        <li><a href="https://www.meguiarsdirect.com/meguiars-ultimate-wash-wax-48oz.html" target='blank'>Ultimate Wash & Wax</a></li>
-                        <li><a href="https://www.meguiarsdirect.com/meguiars-ultimate-quik-detailer-24-oz.html" target='blank'>Quick Interior Detailer</a></li>
-                        <li><a href="https://www.meguiarsdirect.com/meguiars-ultimate-glass-cleaner-water-repellant-16-oz.html" target='blank'>Glass Cleaner</a></li>
-                        <li><a href="https://www.meguiarsdirect.com/meguiars-ultimate-all-wheel-cleaner.html" target='blank'>Wheel Cleaner</a></li>
-                        <li><a href="https://www.meguiarsdirect.com/meguiars-ultimate-ceramic-coating-8-oz.html" target='blank'>Ceramic Coating</a></li>
-                        <li><a href="https://www.meguiarsdirect.com/meguiars-supreme-shine-drying-towel.html" target='blank'>Microfiber Towel</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/meguiars-ultimate-wash-wax-48oz.html" target='blank'>Ultimate Wash & Wax</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/meguiars-ultimate-quik-detailer-24-oz.html" target='blank'>Quick Interior Detailer</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/meguiars-ultimate-glass-cleaner-water-repellant-16-oz.html" target='blank'>Glass Cleaner</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/meguiars-ultimate-all-wheel-cleaner.html" target='blank'>Wheel Cleaner</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/meguiars-ultimate-ceramic-coating-8-oz.html" target='blank'>Ceramic Coating</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/meguiars-supreme-shine-drying-towel.html" target='blank'>Microfiber Towel</a></li>
                     </ul>
                 </div>
 
                 <div className={styles.footerContent}>
                     <h4>Sponsors</h4>
                     <ul>
-                        <li><a href="https://www.meguiarsdirect.com/" target='blank'>Meguiar's</a></li>
-                        <li><a href="https://adamspolishes.com/" target='blank'>Adam's Polishes</a></li>
-                        <li><a href="https://esrwheels.com/" target='blank'>ESR Wheels</a></li>
-                        <li><a href="https://libertywalk.shop/" target='blank'>LibertyWalk</a></li>
-                        <li><a href="https://pandemusa.com/" target='blank'>Pandem</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/" target='blank'>Meguiar's</a></li>
+                        <li><a className={styles.underline} href="https://adamspolishes.com/" target='blank'>Adam's Polishes</a></li>
+                        <li><a className={styles.underline} href="https://esrwheels.com/" target='blank'>ESR Wheels</a></li>
+                        <li><a className={styles.underline} href="https://libertywalk.shop/" target='blank'>LibertyWalk</a></li>
+                        <li><a className={styles.underline} href="https://pandemusa.com/" target='blank'>Pandem</a></li>
                     </ul>
                 </div>
 
