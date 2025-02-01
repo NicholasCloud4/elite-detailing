@@ -36,8 +36,8 @@ const Footer = () => {
                 <div className={styles.footerContent}>
                     <h4>Sponsors</h4>
                     <ul>
-                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/" target='blank'>Meguiar's</a></li>
-                        <li><a className={styles.underline} href="https://adamspolishes.com/" target='blank'>Adam's Polishes</a></li>
+                        <li><a className={styles.underline} href="https://www.meguiarsdirect.com/" target='blank'>Meguiar&apos;s</a></li>
+                        <li><a className={styles.underline} href="https://adamspolishes.com/" target='blank'>Adam&apos;s Polishes</a></li>
                         <li><a className={styles.underline} href="https://esrwheels.com/" target='blank'>ESR Wheels</a></li>
                         <li><a className={styles.underline} href="https://libertywalk.shop/" target='blank'>LibertyWalk</a></li>
                         <li><a className={styles.underline} href="https://pandemusa.com/" target='blank'>Pandem</a></li>

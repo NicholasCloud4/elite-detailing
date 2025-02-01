@@ -7,7 +7,7 @@ import NavBar from '@/components/NavBar'
 import Products from '@/components/Products'
 import { ProductsHover } from '@/components/ProductsHover'
 import SignUp from '@/components/SignUp'
-import Video from '@/components/video'
+import Video from '@/components/Video'
 import React from 'react'
 
 

@@ -22,7 +22,7 @@ const Products = () => {
                                     <IoCarSport size={30} />
                                     <h5 class="card-title">&nbsp;Ultimate Wash & Wax</h5>
                                 </div>
-                                <p class="card-text">Ultimate Wash and Wax is the perfect way to not only clean, but also boost your protection, glossiness and add shine to your car's finish in-between regular waxing.</p>
+                                <p class="card-text">Ultimate Wash and Wax is the perfect way to not only clean, but also boost your protection, glossiness and add shine to your car&apos;s finish in-between regular waxing.</p>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Products = () => {
                                     <PiSeatFill size={30} />
                                     <h5 class="card-title">Quick Interior Detailer</h5>
                                 </div>
-                                <p class="card-text">The fastest way to clean all interior surfaces. Use every time you wash or Quik Detail to give your interior that "just detailed" look. In just 5 additional minutes, your entire interior will look sharp and smell fresh.</p>
+                                <p class="card-text">The fastest way to clean all interior surfaces. Use every time you wash or Quik Detail to give your interior that &ldquo;just detailed&ldquo; look. In just 5 additional minutes, your entire interior will look sharp and smell fresh.</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@ const Products = () => {
                                     <MdOutlineWaves size={30} />
                                     <h5 class="card-title">&nbsp;Cermaic Coating</h5>
                                 </div>
-                                <p class="card-text">This cutting-edge formula allows you to get the benefits of ultra-durable protection that increases gloss and slickness with unbelievable water beading, but it doesn't require a complicated process to apply or remove. One of the benefits of this coating is that it will conceal light paint defects.</p>
+                                <p class="card-text">This cutting-edge formula allows you to get the benefits of ultra-durable protection that increases gloss and slickness with unbelievable water beading, but it doesn&apos;t require a complicated process to apply or remove. One of the benefits of this coating is that it will conceal light paint defects.</p>
                             </div>
                         </div>
                     </div>
